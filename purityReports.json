@@ -1,0 +1,80 @@
+[
+  {
+    "virusPPM": 100,
+    "contaminantPPM": 110,
+    "waterPurityCondition": "UNSAFE",
+    "timeStamp": {
+      "date": {
+        "year": 2016,
+        "month": 8,
+        "day": 30
+      },
+      "time": {
+        "hour": 17,
+        "minute": 37,
+        "second": 37,
+        "nano": 63000000
+      }
+    },
+    "reportNumber": 2,
+    "reporterUsername": "k",
+    "location": {
+      "location": "GT",
+      "latitude": 33.77,
+      "longitude": -84.4
+    },
+    "active": true
+  },
+  {
+    "virusPPM": 80,
+    "contaminantPPM": 90,
+    "waterPurityCondition": "TREATABLE",
+    "timeStamp": {
+      "date": {
+        "year": 2016,
+        "month": 9,
+        "day": 30
+      },
+      "time": {
+        "hour": 17,
+        "minute": 37,
+        "second": 58,
+        "nano": 455000000
+      }
+    },
+    "reportNumber": 3,
+    "reporterUsername": "k",
+    "location": {
+      "location": "gt2",
+      "latitude": 33.77,
+      "longitude": -84.4
+    },
+    "active": true
+  },
+  {
+    "virusPPM": 70,
+    "contaminantPPM": 80,
+    "waterPurityCondition": "TREATABLE",
+    "timeStamp": {
+      "date": {
+        "year": 2016,
+        "month": 10,
+        "day": 30
+      },
+      "time": {
+        "hour": 17,
+        "minute": 38,
+        "second": 15,
+        "nano": 709000000
+      }
+    },
+    "reportNumber": 4,
+    "reporterUsername": "k",
+    "location": {
+      "location": "gt",
+      "latitude": 33.77,
+      "longitude": -84.4
+    },
+    "active": true
+  }
+]

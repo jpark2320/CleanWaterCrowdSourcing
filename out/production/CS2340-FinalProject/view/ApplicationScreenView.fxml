@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="624.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ApplicationScreenController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu fx:id="reportsMenu" mnemonicParsing="false" text="Reports">
+          <items>
+            <MenuItem fx:id="menuNewSourceReport" mnemonicParsing="false" onAction="#onMenuNewSourceReport" text="New Source Report" />
+                  <MenuItem fx:id="menuNewPurityReport" mnemonicParsing="false" onAction="#onMenuNewPurityReport" text="New Purity Report" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="menuViewSubmittedReports" mnemonicParsing="false" onAction="#onMenuViewSubmittedReports" text="View Submitted Reports" />
+                  <MenuItem fx:id="menuViewAllReports" mnemonicParsing="false" onAction="#onMenuViewAllReports" text="View All Reports" />
+                  <MenuItem fx:id="menuViewHistoricalReport" mnemonicParsing="false" onAction="#onMenuViewHistoricalReport" text="View Historical Report" />
+          </items>
+        </Menu>
+        <Menu fx:id="adminMenu" mnemonicParsing="false" text="Admin">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#onMenuEditUser" text="Edit User" />
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuSecurityLog" text="Security Log" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Profile">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#onMenuViewProfile" text="View Profile" />
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuEditProfile" text="Edit Profile" />
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuLogout" text="Logout" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Main Application - Logged In" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <GoogleMapView fx:id="mapView" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button mnemonicParsing="false" onAction="#onRefreshClick" text="Refresh" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

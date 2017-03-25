@@ -1,0 +1,52 @@
+[
+  {
+    "waterSourceType": "WELL",
+    "waterSourceCondition": "TREATABLE_CLEAR",
+    "timeStamp": {
+      "date": {
+        "year": 2016,
+        "month": 10,
+        "day": 30
+      },
+      "time": {
+        "hour": 14,
+        "minute": 28,
+        "second": 39,
+        "nano": 943000000
+      }
+    },
+    "reportNumber": 1,
+    "reporterUsername": "j",
+    "location": {
+      "location": "3",
+      "latitude": 3.0,
+      "longitude": 3.0
+    },
+    "active": true
+  },
+  {
+    "waterSourceType": "BOTTLED",
+    "waterSourceCondition": "TREATABLE_MUDDY",
+    "timeStamp": {
+      "date": {
+        "year": 2016,
+        "month": 11,
+        "day": 13
+      },
+      "time": {
+        "hour": 16,
+        "minute": 4,
+        "second": 49,
+        "nano": 346000000
+      }
+    },
+    "reportNumber": 5,
+    "reporterUsername": "aaa",
+    "location": {
+      "location": "fd",
+      "latitude": 33.77,
+      "longitude": 84.4
+    },
+    "active": true
+  }
+]

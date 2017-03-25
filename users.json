@@ -1,0 +1,26 @@
+[
+  {
+    "username": "j",
+    "password": "1b9a3ba4a2767835513710bfe42d166c35753d5797064bf69063229c9aa0fea7",
+    "name": "j",
+    "authorizationLevel": "WORKER",
+    "email": "",
+    "address": ""
+  },
+  {
+    "username": "k",
+    "password": "1b664eef93680a765ba26d36517ab363fc2438e029d5833503a725fc36d06bb1",
+    "name": "k",
+    "authorizationLevel": "MANAGER",
+    "email": "",
+    "address": ""
+  },
+  {
+    "username": "aaa",
+    "password": "cf7f4dfe26db0ec20c93553f28f33bd941d50bd0fbe671dcbf8d199ef9edccbe",
+    "name": "aaa",
+    "authorizationLevel": "MANAGER",
+    "email": "",
+    "address": ""
+  }
+]

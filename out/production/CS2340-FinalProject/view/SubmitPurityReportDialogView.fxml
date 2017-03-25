@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubmitPurityReportDialogController">
+   <children>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="120.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="480.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Latitude" />
+            <Label contentDisplay="CENTER" text="Longitude" GridPane.rowIndex="1" />
+            <Label contentDisplay="CENTER" text="Location Description" GridPane.rowIndex="2" />
+            <Label text="Virus PPM" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label text="Contaminant PPM" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label text="Overall Condition" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="latitude" promptText="Enter a latitude - 33.77" GridPane.columnIndex="1" />
+            <TextField fx:id="longitude" promptText="Enter a longitude - -84.40" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="locDesc" promptText="Enter a description of this location" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="virusPPM" promptText="Enter a number" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="contaminantPPM" promptText="Enter a number" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="condition" prefWidth="150.0" promptText="Select Condition" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </GridPane>
+      <HBox>
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button mnemonicParsing="false" onAction="#onSubmitClick" text="Submit" />
+                  <Button mnemonicParsing="false" onAction="#onCancelClick" text="Cancel" />
+              </buttons>
+               <HBox.margin>
+                  <Insets left="80.0" />
+               </HBox.margin>
+            </ButtonBar>
+            <Label fx:id="error" wrapText="true">
+               <HBox.margin>
+                  <Insets left="60.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
